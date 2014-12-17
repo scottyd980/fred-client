@@ -17,4 +17,29 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+
+app.import('bower_components/fontawesome/css/font-awesome.min.css', {
+	destDir: 'assets/css'
+});
+app.import('bower_components/fontawesome/fonts/fontawesome-webfont.eot', {
+	destDir: 'fonts'
+});
+app.import('bower_components/fontawesome/fonts/fontawesome-webfont.svg', {
+	destDir: 'fonts'
+});
+app.import('bower_components/fontawesome/fonts/fontawesome-webfont.ttf', {
+	destDir: 'fonts'
+});
+app.import('bower_components/fontawesome/fonts/fontawesome-webfont.woff', {
+	destDir: 'fonts'
+});
+app.import('bower_components/fontawesome/fonts/FontAwesome.otf', {
+	destDir: 'fonts'
+});
+
+app.import('bower_components/ember-data-sails-adapter/ember-data-sails-adapter.js');
+
+app.import('bower_components/sails.io.js/dist/sails.io.js');
+
 module.exports = app.toTree();
